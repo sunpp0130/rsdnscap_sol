@@ -1,0 +1,142 @@
+txtout.lo: txtout.c ../../src/config.h /usr/include/stdio.h \
+ /usr/include/sys/feature_tests.h /usr/include/sys/ccompile.h \
+ /usr/include/sys/isa_defs.h /usr/include/iso/stdio_iso.h \
+ /usr/include/sys/va_list.h /usr/include/stdio_tag.h \
+ /usr/include/stdio_impl.h /usr/include/iso/stdio_c99.h \
+ /usr/include/stdlib.h /usr/include/iso/stdlib_iso.h \
+ /usr/include/iso/stdlib_c99.h /usr/include/unistd.h \
+ /usr/include/sys/types.h /usr/include/sys/machtypes.h \
+ /usr/include/ia32/sys/machtypes.h /usr/include/sys/int_types.h \
+ /usr/include/sys/select.h /usr/include/sys/time_impl.h \
+ /usr/include/sys/time.h /usr/include/time.h /usr/include/iso/time_iso.h \
+ /usr/include/sys/unistd.h /usr/include/string.h \
+ /usr/include/iso/string_iso.h /usr/include/netinet/in.h \
+ /usr/include/sys/socket_impl.h /usr/include/sys/un.h \
+ /usr/include/net/if_dl.h /usr/include/sys/stream.h \
+ /usr/include/sys/poll.h /usr/include/sys/strmdep.h \
+ /usr/include/sys/cred.h /usr/include/sys/t_lock.h \
+ /usr/include/sys/machlock.h /usr/include/sys/param.h \
+ /usr/include/sys/mutex.h /usr/include/sys/rwlock.h \
+ /usr/include/sys/semaphore.h /usr/include/sys/condvar.h \
+ /usr/include/sys/model.h /usr/include/sys/byteorder.h \
+ /usr/include/ctype.h /usr/include/iso/ctype_iso.h \
+ /usr/include/iso/ctype_c99.h /usr/include/errno.h \
+ /usr/include/sys/errno.h /usr/include/arpa/inet.h \
+ /usr/include/sys/socket.h /usr/include/sys/uio.h \
+ /usr/include/sys/netconfig.h /usr/include/sys/sock_flow_sla.h \
+ /usr/include/arpa/nameser.h /usr/include/arpa/nameser_compat.h \
+ /usr/include/resolv.h ../../src/dnscap_common.h
+
+../../src/config.h:
+
+/usr/include/stdio.h:
+
+/usr/include/sys/feature_tests.h:
+
+/usr/include/sys/ccompile.h:
+
+/usr/include/sys/isa_defs.h:
+
+/usr/include/iso/stdio_iso.h:
+
+/usr/include/sys/va_list.h:
+
+/usr/include/stdio_tag.h:
+
+/usr/include/stdio_impl.h:
+
+/usr/include/iso/stdio_c99.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/iso/stdlib_iso.h:
+
+/usr/include/iso/stdlib_c99.h:
+
+/usr/include/unistd.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/sys/machtypes.h:
+
+/usr/include/ia32/sys/machtypes.h:
+
+/usr/include/sys/int_types.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/sys/time_impl.h:
+
+/usr/include/sys/time.h:
+
+/usr/include/time.h:
+
+/usr/include/iso/time_iso.h:
+
+/usr/include/sys/unistd.h:
+
+/usr/include/string.h:
+
+/usr/include/iso/string_iso.h:
+
+/usr/include/netinet/in.h:
+
+/usr/include/sys/socket_impl.h:
+
+/usr/include/sys/un.h:
+
+/usr/include/net/if_dl.h:
+
+/usr/include/sys/stream.h:
+
+/usr/include/sys/poll.h:
+
+/usr/include/sys/strmdep.h:
+
+/usr/include/sys/cred.h:
+
+/usr/include/sys/t_lock.h:
+
+/usr/include/sys/machlock.h:
+
+/usr/include/sys/param.h:
+
+/usr/include/sys/mutex.h:
+
+/usr/include/sys/rwlock.h:
+
+/usr/include/sys/semaphore.h:
+
+/usr/include/sys/condvar.h:
+
+/usr/include/sys/model.h:
+
+/usr/include/sys/byteorder.h:
+
+/usr/include/ctype.h:
+
+/usr/include/iso/ctype_iso.h:
+
+/usr/include/iso/ctype_c99.h:
+
+/usr/include/errno.h:
+
+/usr/include/sys/errno.h:
+
+/usr/include/arpa/inet.h:
+
+/usr/include/sys/socket.h:
+
+/usr/include/sys/uio.h:
+
+/usr/include/sys/netconfig.h:
+
+/usr/include/sys/sock_flow_sla.h:
+
+/usr/include/arpa/nameser.h:
+
+/usr/include/arpa/nameser_compat.h:
+
+/usr/include/resolv.h:
+
+../../src/dnscap_common.h:

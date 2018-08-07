@@ -1,0 +1,578 @@
+iaddr.o: iaddr.c config.h iaddr.h dnscap.h /usr/include/sys/param.h \
+ /usr/include/sys/types.h /usr/include/sys/feature_tests.h \
+ /usr/include/sys/ccompile.h /usr/include/sys/isa_defs.h \
+ /usr/include/sys/machtypes.h /usr/include/ia32/sys/machtypes.h \
+ /usr/include/sys/int_types.h /usr/include/sys/select.h \
+ /usr/include/sys/time_impl.h /usr/include/sys/time.h /usr/include/time.h \
+ /usr/include/iso/time_iso.h /usr/include/sys/unistd.h \
+ /usr/include/sys/socket.h /usr/include/sys/uio.h \
+ /usr/include/sys/socket_impl.h /usr/include/sys/un.h \
+ /usr/include/net/if_dl.h /usr/include/sys/netconfig.h \
+ /usr/include/netinet/in.h /usr/include/sys/stream.h \
+ /usr/include/sys/poll.h /usr/include/sys/strmdep.h \
+ /usr/include/sys/cred.h /usr/include/sys/t_lock.h \
+ /usr/include/sys/machlock.h /usr/include/sys/mutex.h \
+ /usr/include/sys/rwlock.h /usr/include/sys/semaphore.h \
+ /usr/include/sys/condvar.h /usr/include/sys/model.h \
+ /usr/include/sys/byteorder.h /usr/include/sys/sock_flow_sla.h \
+ /usr/include/sys/fcntl.h /usr/include/sys/ioctl.h \
+ /usr/gcc/4.5/lib/gcc/i386-pc-solaris2.11/4.5.2/include/stdarg.h \
+ /usr/include/syslog.h /usr/include/sys/syslog.h \
+ /usr/include/sys/va_list.h /usr/include/dlfcn.h /usr/include/sys/auxv.h \
+ /usr/include/sys/auxv_386.h /usr/include/sys/mman.h \
+ /usr/include/sys/stat.h /usr/include/sys/stat_impl.h \
+ /usr/include/sys/resource.h /usr/include/net/if.h \
+ /usr/include/net/if_arp.h /usr/include/netinet/if_ether.h \
+ /usr/include/sys/ethernet.h ../snprintf.h /usr/include/stdio.h \
+ /usr/include/iso/stdio_iso.h /usr/include/stdio_tag.h \
+ /usr/include/stdio_impl.h /usr/include/iso/stdio_c99.h \
+ /usr/include/netinet/in_systm.h /usr/include/netinet/ip.h \
+ /usr/include/netinet/ip6.h /usr/include/netinet/udp.h \
+ /usr/include/netinet/tcp.h /usr/include/sys/inttypes.h \
+ /usr/include/sys/int_limits.h /usr/include/sys/int_const.h \
+ /usr/include/sys/int_fmtio.h /usr/include/arpa/nameser.h \
+ /usr/include/arpa/nameser_compat.h /usr/include/arpa/inet.h \
+ /usr/include/assert.h /usr/include/errno.h /usr/include/sys/errno.h \
+ /usr/include/netdb.h /usr/include/paths.h /usr/include/sys/paths.h \
+ /usr/include/pcap.h /usr/include/pcap/pcap.h /usr/include/pcap/bpf.h \
+ /usr/include/regex.h /usr/include/resolv.h /usr/include/signal.h \
+ /usr/include/iso/signal_iso.h /usr/include/sys/iso/signal_iso.h \
+ /usr/include/sys/signal.h /usr/include/sys/siginfo.h \
+ /usr/include/sys/machsig.h /usr/include/vm/faultcode.h \
+ /usr/include/sys/procset.h /usr/include/stdlib.h \
+ /usr/include/iso/stdlib_iso.h /usr/include/iso/stdlib_c99.h \
+ /usr/include/sys/wait.h /usr/include/string.h \
+ /usr/include/iso/string_iso.h /usr/include/unistd.h /usr/include/pwd.h \
+ /usr/include/grp.h /usr/include/zlib.h /usr/include/zconf.h \
+ /usr/gcc/4.5/lib/gcc/i386-pc-solaris2.11/4.5.2/include-fixed/limits.h \
+ /usr/gcc/4.5/lib/gcc/i386-pc-solaris2.11/4.5.2/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/iso/limits_iso.h ../isc/list.h \
+ ../isc/assertions.h dnscap_common.h dump_dns.h dump_cbor.h dump_cds.h \
+ options.h pcap-thread/pcap_thread.h /usr/include/netinet/ip_compat.h \
+ /usr/include/sys/cmn_err.h /usr/include/sys/ioccom.h \
+ /usr/include/sys/sysmacros.h /usr/include/sys/kmem.h \
+ /usr/include/sys/vmem.h /usr/include/sys/proc.h \
+ /usr/include/sys/thread.h /usr/include/sys/klwp.h /usr/include/sys/pcb.h \
+ /usr/include/sys/regset.h /usr/include/sys/privregs.h \
+ /usr/include/ia32/sys/privregs.h /usr/include/sys/controlregs.h \
+ /usr/include/sys/segments.h /usr/include/sys/tss.h \
+ /usr/include/sys/msacct.h /usr/include/sys/ucontext.h \
+ /usr/include/sys/lwp.h /usr/include/sys/synch.h \
+ /usr/include/sys/contract.h /usr/include/sys/kcpc.h \
+ /usr/include/sys/cpc_impl.h /usr/include/sys/ksynch.h \
+ /usr/include/sys/user.h /usr/include/sys/watchpoint.h \
+ /usr/include/vm/seg_enum.h /usr/include/sys/copyops.h \
+ /usr/include/sys/buf.h /usr/include/sys/types32.h \
+ /usr/include/sys/kstat.h /usr/include/sys/aio_req.h \
+ /usr/include/sys/avl.h /usr/include/sys/avl_impl.h \
+ /usr/include/sys/timer.h /usr/include/sys/list.h \
+ /usr/include/sys/list_impl.h /usr/include/sys/utrap.h \
+ /usr/include/sys/refstr.h /usr/include/sys/rctl.h \
+ /usr/include/sys/door_impl.h /usr/include/sys/secext.h \
+ /usr/include/sys/aslr.h /usr/include/sys/noexec.h \
+ /usr/include/sys/contract/process.h /usr/include/sys/devops.h \
+ /usr/include/vm/as.h /usr/include/vm/seg.h /usr/include/sys/vnode.h \
+ /usr/include/sys/rwstlock.h /usr/include/sys/tsol/label_macro.h \
+ /usr/include/vm/hat.h /usr/include/vm/page.h /usr/include/vm/types.h \
+ /usr/include/sys/ddidmareq.h /usr/include/sys/dump.h \
+ /usr/include/sys/dditypes.h /usr/include/sys/ddimapreq.h \
+ /usr/include/sys/ddipropdefs.h /usr/include/sys/ddidevmap.h \
+ /usr/include/sys/ddifm.h /usr/include/sys/fm/protocol.h \
+ /usr/include/sys/nvpair.h /usr/include/sys/processor.h \
+ /usr/include/sys/nexusdefs.h /usr/include/sys/ddi_intr.h \
+ /usr/include/sys/ddi_intr_impl.h /usr/include/sys/ddi_hp.h \
+ /usr/include/sys/ddi_hp_impl.h /usr/include/sys/ddi_impldefs.h \
+ /usr/include/sys/autoconf.h /usr/include/sys/obpdefs.h \
+ /usr/include/sys/systm.h /usr/include/sys/hwconf.h \
+ /usr/include/sys/dacf_impl.h /usr/include/sys/dacf.h \
+ /usr/include/sys/ndifm.h /usr/include/sys/ddifm_impl.h \
+ /usr/include/sys/errorq.h /usr/include/sys/ddifm_drv.h \
+ /usr/include/sys/ddifm_drv_impl.h /usr/include/sys/epm.h \
+ /usr/include/sys/pm.h /usr/include/sys/taskq.h /usr/include/sys/tzfile.h \
+ /usr/include/sys/sysevent.h /usr/include/sys/sysevent/eventdefs.h \
+ /usr/include/door.h /usr/include/sys/door.h /usr/include/ucred.h \
+ /usr/include/sys/priv.h /usr/include/sys/priv_names.h \
+ /usr/include/sys/tsol/label.h /usr/include/sys/ddi_isa.h \
+ /usr/include/sys/id_space.h /usr/include/sys/modhash.h \
+ /usr/include/sys/bitset.h /usr/include/sys/neti.h \
+ /usr/include/sys/queue.h /usr/include/sys/note.h \
+ /usr/include/sys/hook_impl.h /usr/include/sys/hook.h \
+ /usr/include/sys/netstack.h /usr/include/sys/condvar_impl.h \
+ /usr/include/net/radix.h /usr/include/netinet/icmp6.h \
+ /usr/include/inet/common.h /usr/include/sys/mkdev.h \
+ /usr/include/inet/led.h /usr/include/inet/ip.h /usr/include/inet/mib2.h \
+ /usr/include/inet/nd.h /usr/include/sys/atomic.h \
+ /usr/include/netinet/igmp.h /usr/include/sys/hook_event.h \
+ /usr/include/inet/ip_stack.h /usr/include/netinet/igmp_var.h \
+ /usr/include/net/pfkeyv2.h /usr/include/inet/ip_ire.h \
+ /usr/include/inet/ip_if.h /usr/include/net/route.h
+
+config.h:
+
+iaddr.h:
+
+dnscap.h:
+
+/usr/include/sys/param.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/sys/feature_tests.h:
+
+/usr/include/sys/ccompile.h:
+
+/usr/include/sys/isa_defs.h:
+
+/usr/include/sys/machtypes.h:
+
+/usr/include/ia32/sys/machtypes.h:
+
+/usr/include/sys/int_types.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/sys/time_impl.h:
+
+/usr/include/sys/time.h:
+
+/usr/include/time.h:
+
+/usr/include/iso/time_iso.h:
+
+/usr/include/sys/unistd.h:
+
+/usr/include/sys/socket.h:
+
+/usr/include/sys/uio.h:
+
+/usr/include/sys/socket_impl.h:
+
+/usr/include/sys/un.h:
+
+/usr/include/net/if_dl.h:
+
+/usr/include/sys/netconfig.h:
+
+/usr/include/netinet/in.h:
+
+/usr/include/sys/stream.h:
+
+/usr/include/sys/poll.h:
+
+/usr/include/sys/strmdep.h:
+
+/usr/include/sys/cred.h:
+
+/usr/include/sys/t_lock.h:
+
+/usr/include/sys/machlock.h:
+
+/usr/include/sys/mutex.h:
+
+/usr/include/sys/rwlock.h:
+
+/usr/include/sys/semaphore.h:
+
+/usr/include/sys/condvar.h:
+
+/usr/include/sys/model.h:
+
+/usr/include/sys/byteorder.h:
+
+/usr/include/sys/sock_flow_sla.h:
+
+/usr/include/sys/fcntl.h:
+
+/usr/include/sys/ioctl.h:
+
+/usr/gcc/4.5/lib/gcc/i386-pc-solaris2.11/4.5.2/include/stdarg.h:
+
+/usr/include/syslog.h:
+
+/usr/include/sys/syslog.h:
+
+/usr/include/sys/va_list.h:
+
+/usr/include/dlfcn.h:
+
+/usr/include/sys/auxv.h:
+
+/usr/include/sys/auxv_386.h:
+
+/usr/include/sys/mman.h:
+
+/usr/include/sys/stat.h:
+
+/usr/include/sys/stat_impl.h:
+
+/usr/include/sys/resource.h:
+
+/usr/include/net/if.h:
+
+/usr/include/net/if_arp.h:
+
+/usr/include/netinet/if_ether.h:
+
+/usr/include/sys/ethernet.h:
+
+../snprintf.h:
+
+/usr/include/stdio.h:
+
+/usr/include/iso/stdio_iso.h:
+
+/usr/include/stdio_tag.h:
+
+/usr/include/stdio_impl.h:
+
+/usr/include/iso/stdio_c99.h:
+
+/usr/include/netinet/in_systm.h:
+
+/usr/include/netinet/ip.h:
+
+/usr/include/netinet/ip6.h:
+
+/usr/include/netinet/udp.h:
+
+/usr/include/netinet/tcp.h:
+
+/usr/include/sys/inttypes.h:
+
+/usr/include/sys/int_limits.h:
+
+/usr/include/sys/int_const.h:
+
+/usr/include/sys/int_fmtio.h:
+
+/usr/include/arpa/nameser.h:
+
+/usr/include/arpa/nameser_compat.h:
+
+/usr/include/arpa/inet.h:
+
+/usr/include/assert.h:
+
+/usr/include/errno.h:
+
+/usr/include/sys/errno.h:
+
+/usr/include/netdb.h:
+
+/usr/include/paths.h:
+
+/usr/include/sys/paths.h:
+
+/usr/include/pcap.h:
+
+/usr/include/pcap/pcap.h:
+
+/usr/include/pcap/bpf.h:
+
+/usr/include/regex.h:
+
+/usr/include/resolv.h:
+
+/usr/include/signal.h:
+
+/usr/include/iso/signal_iso.h:
+
+/usr/include/sys/iso/signal_iso.h:
+
+/usr/include/sys/signal.h:
+
+/usr/include/sys/siginfo.h:
+
+/usr/include/sys/machsig.h:
+
+/usr/include/vm/faultcode.h:
+
+/usr/include/sys/procset.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/iso/stdlib_iso.h:
+
+/usr/include/iso/stdlib_c99.h:
+
+/usr/include/sys/wait.h:
+
+/usr/include/string.h:
+
+/usr/include/iso/string_iso.h:
+
+/usr/include/unistd.h:
+
+/usr/include/pwd.h:
+
+/usr/include/grp.h:
+
+/usr/include/zlib.h:
+
+/usr/include/zconf.h:
+
+/usr/gcc/4.5/lib/gcc/i386-pc-solaris2.11/4.5.2/include-fixed/limits.h:
+
+/usr/gcc/4.5/lib/gcc/i386-pc-solaris2.11/4.5.2/include-fixed/syslimits.h:
+
+/usr/include/limits.h:
+
+/usr/include/iso/limits_iso.h:
+
+../isc/list.h:
+
+../isc/assertions.h:
+
+dnscap_common.h:
+
+dump_dns.h:
+
+dump_cbor.h:
+
+dump_cds.h:
+
+options.h:
+
+pcap-thread/pcap_thread.h:
+
+/usr/include/netinet/ip_compat.h:
+
+/usr/include/sys/cmn_err.h:
+
+/usr/include/sys/ioccom.h:
+
+/usr/include/sys/sysmacros.h:
+
+/usr/include/sys/kmem.h:
+
+/usr/include/sys/vmem.h:
+
+/usr/include/sys/proc.h:
+
+/usr/include/sys/thread.h:
+
+/usr/include/sys/klwp.h:
+
+/usr/include/sys/pcb.h:
+
+/usr/include/sys/regset.h:
+
+/usr/include/sys/privregs.h:
+
+/usr/include/ia32/sys/privregs.h:
+
+/usr/include/sys/controlregs.h:
+
+/usr/include/sys/segments.h:
+
+/usr/include/sys/tss.h:
+
+/usr/include/sys/msacct.h:
+
+/usr/include/sys/ucontext.h:
+
+/usr/include/sys/lwp.h:
+
+/usr/include/sys/synch.h:
+
+/usr/include/sys/contract.h:
+
+/usr/include/sys/kcpc.h:
+
+/usr/include/sys/cpc_impl.h:
+
+/usr/include/sys/ksynch.h:
+
+/usr/include/sys/user.h:
+
+/usr/include/sys/watchpoint.h:
+
+/usr/include/vm/seg_enum.h:
+
+/usr/include/sys/copyops.h:
+
+/usr/include/sys/buf.h:
+
+/usr/include/sys/types32.h:
+
+/usr/include/sys/kstat.h:
+
+/usr/include/sys/aio_req.h:
+
+/usr/include/sys/avl.h:
+
+/usr/include/sys/avl_impl.h:
+
+/usr/include/sys/timer.h:
+
+/usr/include/sys/list.h:
+
+/usr/include/sys/list_impl.h:
+
+/usr/include/sys/utrap.h:
+
+/usr/include/sys/refstr.h:
+
+/usr/include/sys/rctl.h:
+
+/usr/include/sys/door_impl.h:
+
+/usr/include/sys/secext.h:
+
+/usr/include/sys/aslr.h:
+
+/usr/include/sys/noexec.h:
+
+/usr/include/sys/contract/process.h:
+
+/usr/include/sys/devops.h:
+
+/usr/include/vm/as.h:
+
+/usr/include/vm/seg.h:
+
+/usr/include/sys/vnode.h:
+
+/usr/include/sys/rwstlock.h:
+
+/usr/include/sys/tsol/label_macro.h:
+
+/usr/include/vm/hat.h:
+
+/usr/include/vm/page.h:
+
+/usr/include/vm/types.h:
+
+/usr/include/sys/ddidmareq.h:
+
+/usr/include/sys/dump.h:
+
+/usr/include/sys/dditypes.h:
+
+/usr/include/sys/ddimapreq.h:
+
+/usr/include/sys/ddipropdefs.h:
+
+/usr/include/sys/ddidevmap.h:
+
+/usr/include/sys/ddifm.h:
+
+/usr/include/sys/fm/protocol.h:
+
+/usr/include/sys/nvpair.h:
+
+/usr/include/sys/processor.h:
+
+/usr/include/sys/nexusdefs.h:
+
+/usr/include/sys/ddi_intr.h:
+
+/usr/include/sys/ddi_intr_impl.h:
+
+/usr/include/sys/ddi_hp.h:
+
+/usr/include/sys/ddi_hp_impl.h:
+
+/usr/include/sys/ddi_impldefs.h:
+
+/usr/include/sys/autoconf.h:
+
+/usr/include/sys/obpdefs.h:
+
+/usr/include/sys/systm.h:
+
+/usr/include/sys/hwconf.h:
+
+/usr/include/sys/dacf_impl.h:
+
+/usr/include/sys/dacf.h:
+
+/usr/include/sys/ndifm.h:
+
+/usr/include/sys/ddifm_impl.h:
+
+/usr/include/sys/errorq.h:
+
+/usr/include/sys/ddifm_drv.h:
+
+/usr/include/sys/ddifm_drv_impl.h:
+
+/usr/include/sys/epm.h:
+
+/usr/include/sys/pm.h:
+
+/usr/include/sys/taskq.h:
+
+/usr/include/sys/tzfile.h:
+
+/usr/include/sys/sysevent.h:
+
+/usr/include/sys/sysevent/eventdefs.h:
+
+/usr/include/door.h:
+
+/usr/include/sys/door.h:
+
+/usr/include/ucred.h:
+
+/usr/include/sys/priv.h:
+
+/usr/include/sys/priv_names.h:
+
+/usr/include/sys/tsol/label.h:
+
+/usr/include/sys/ddi_isa.h:
+
+/usr/include/sys/id_space.h:
+
+/usr/include/sys/modhash.h:
+
+/usr/include/sys/bitset.h:
+
+/usr/include/sys/neti.h:
+
+/usr/include/sys/queue.h:
+
+/usr/include/sys/note.h:
+
+/usr/include/sys/hook_impl.h:
+
+/usr/include/sys/hook.h:
+
+/usr/include/sys/netstack.h:
+
+/usr/include/sys/condvar_impl.h:
+
+/usr/include/net/radix.h:
+
+/usr/include/netinet/icmp6.h:
+
+/usr/include/inet/common.h:
+
+/usr/include/sys/mkdev.h:
+
+/usr/include/inet/led.h:
+
+/usr/include/inet/ip.h:
+
+/usr/include/inet/mib2.h:
+
+/usr/include/inet/nd.h:
+
+/usr/include/sys/atomic.h:
+
+/usr/include/netinet/igmp.h:
+
+/usr/include/sys/hook_event.h:
+
+/usr/include/inet/ip_stack.h:
+
+/usr/include/netinet/igmp_var.h:
+
+/usr/include/net/pfkeyv2.h:
+
+/usr/include/inet/ip_ire.h:
+
+/usr/include/inet/ip_if.h:
+
+/usr/include/net/route.h:
